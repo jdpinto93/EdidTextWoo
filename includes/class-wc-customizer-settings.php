@@ -33,7 +33,7 @@ class WC_Customizer_Settings extends WC_Settings_Page {
 	public function __construct() {
 
 		$this->id    = 'customizer';
-		$this->label = __( 'Customizer', '_JPinto' );
+		$this->label = __( 'Personalizador', '_JPinto' );
 
 		parent::__construct();
 
@@ -50,10 +50,10 @@ class WC_Customizer_Settings extends WC_Settings_Page {
 	public function get_sections() {
 
 		return array(
-			'shop_loop'    => __( 'Shop Loop', '_JPinto' ),
-			'product_page' => __( 'Product Page', '_JPinto' ),
-			'checkout'     => __( 'Checkout', '_JPinto' ),
-			'misc'         => __( 'Misc', '_JPinto' )
+			'shop_loop'    => __( 'Listado', '_JPinto' ),
+			'product_page' => __( 'Pagina de Productos', '_JPinto' ),
+			'checkout'     => __( 'Pafina de Pagos', '_JPinto' ),
+			'misc'         => __( 'Impuestos', '_JPinto' )
 		);
 	}
 
@@ -137,42 +137,42 @@ class WC_Customizer_Settings extends WC_Settings_Page {
 				array(
 
 					array(
-						'title' => __( 'Add to Cart Button Text', '_JPinto' ),
+						'title' => __( 'Texto del botón Agregar al carrito', '_JPinto' ),
 						'type'  => 'title'
 					),
 
 					array(
 						'id'       => 'add_to_cart_text',
-						'title'    => __( 'Simple Product', '_JPinto' ),
-						'desc_tip' => __( 'Changes the add to cart button text for simple products on all loop pages', '_JPinto' ),
+						'title'    => __( 'Producto Simple', '_JPinto' ),
+						'desc_tip' => __( 'Cambia el texto del botón Agregar al carrito para productos simples en todas las páginas de Listados', '_JPinto' ),
 						'type'     => 'text'
 					),
 
 					array(
 						'id'       => 'variable_add_to_cart_text',
 						'title'    => __( 'Variable Product', '_JPinto' ),
-						'desc_tip' => __( 'Changes the add to cart button text for variable products on all loop pages', '_JPinto' ),
+						'desc_tip' => __( 'Cambia el texto del botón Agregar al carrito para productos Variables en todas las páginas de Listados', '_JPinto' ),
 						'type'     => 'text'
 					),
 
 					array(
 						'id'       => 'grouped_add_to_cart_text',
-						'title'    => __( 'Grouped Product', '_JPinto' ),
-						'desc_tip' => __( 'Changes the add to cart button text for grouped products on all loop pages', '_JPinto' ),
+						'title'    => __( 'Grupo de Productos', '_JPinto' ),
+						'desc_tip' => __( 'Cambia el texto del botón Agregar al carrito para productos simples en todas las páginas de bucle', '_JPinto' ),
 						'type'     => 'text'
 					),
 
 					array(
 						'id'       => 'out_of_stock_add_to_cart_text',
-						'title'    => __( 'Out of Stock Product', '_JPinto' ),
-						'desc_tip' => __( 'Changes the add to cart button text for out of stock products on all loop pages', '_JPinto' ),
+						'title'    => __( 'Productos Fuera de Stock', '_JPinto' ),
+						'desc_tip' => __( 'Cambia el texto del botón Agregar al carrito para productos agotados en todas las páginas de Listados', '_JPinto' ),
 						'type'     => 'text'
 					),
 
 					array( 'type' => 'sectionend' ),
 
 					array(
-						'title' => __( 'Sale Flash', '_JPinto' ),
+						'title' => __( 'Venta Rapida', '_JPinto' ),
 						'type'  => 'title'
 					),
 
@@ -188,28 +188,28 @@ class WC_Customizer_Settings extends WC_Settings_Page {
 					array( 'type' => 'sectionend' ),
 
 					array(
-						'title' => __( 'Layout', '_JPinto' ),
+						'title' => __( 'Diseño', '_JPinto' ),
 						'type'  => 'title'
 					),
 
 					array(
 						'id'       => 'loop_shop_per_page',
-						'title'    => __( 'Products displayed per page', '_JPinto' ),
-						'desc_tip' => __( 'Changes the number of products displayed per page', '_JPinto' ),
+						'title'    => __( 'Productos mostrados por página', '_JPinto' ),
+						'desc_tip' => __( 'Cambia el número de productos mostrados por página', '_JPinto' ),
 						'type'     => 'text'
 					),
 
 					array(
 						'id'       => 'loop_shop_columns',
-						'title'    => __( 'Product columns displayed per page', '_JPinto' ),
-						'desc_tip' => __( 'Changes the number of columns displayed per page', '_JPinto' ),
+						'title'    => __( 'Columnas de productos mostradas por página', '_JPinto' ),
+						'desc_tip' => __( 'Cambia el número de columnas mostradas por página', '_JPinto' ),
 						'type'     => 'text'
 					),
 
 					array(
 						'id'       => 'woocommerce_product_thumbnails_columns',
-						'title'    => __( 'Product thumbnail columns displayed', '_JPinto' ),
-						'desc_tip' => __( 'Changes the number of product thumbnail columns displayed', '_JPinto' ),
+						'title'    => __( 'Columnas de miniaturas de productos mostradas', '_JPinto' ),
+						'desc_tip' => __( 'Cambia el número de columnas de miniaturas de productos que se muestran', '_JPinto' ),
 						'type'     => 'text'
 					),
 
@@ -222,94 +222,94 @@ class WC_Customizer_Settings extends WC_Settings_Page {
 				array(
 
 					array(
-						'title' => __( 'Tab Titles', '_JPinto' ),
+						'title' => __( 'Titulo de las Tablas', '_JPinto' ),
 						'type'  => 'title'
 					),
 
 					array(
 						'id'       => 'woocommerce_product_description_tab_title',
-						'title'    => __( 'Product Description', '_JPinto' ),
-						'desc_tip' => __( 'Changes the Production Description tab title', '_JPinto' ),
+						'title'    => __( 'Descripcion', '_JPinto' ),
+						'desc_tip' => __( 'Cambia el título de la pestaña Descripción de Productos', '_JPinto' ),
 						'type'     => 'text'
 					),
 
 					array(
 						'id'       => 'woocommerce_product_additional_information_tab_title',
-						'title'    => __( 'Additional Information', '_JPinto' ),
-						'desc_tip' => __( 'Changes the Additional Information tab title', '_JPinto' ),
+						'title'    => __( 'Informacion Adicional', '_JPinto' ),
+						'desc_tip' => __( 'Cambia el título de la pestaña Información adicional', '_JPinto' ),
 						'type'     => 'text'
 					),
 
 					array( 'type' => 'sectionend' ),
 
 					array(
-						'title' => __( 'Tab Content Headings', '_JPinto' ),
+						'title' => __( 'Encabezados de pestañas', '_JPinto' ),
 						'type'  => 'title'
 					),
 
 					array(
 						'id'       => 'woocommerce_product_description_heading',
-						'title'    => __( 'Product Description', '_JPinto' ),
-						'desc_tip' => __( 'Changes the Product Description tab heading', '_JPinto' ),
+						'title'    => __( 'Descripción del producto', '_JPinto' ),
+						'desc_tip' => __( 'Cambia el encabezado de la pestaña Descripción del producto', '_JPinto' ),
 						'type'     => 'text'
 					),
 
 					array(
 						'id'       => 'woocommerce_product_additional_information_heading',
-						'title'    => __( 'Additional Information', '_JPinto' ),
-						'desc_tip' => __( 'Changes the Additional Information tab heading', '_JPinto' ),
+						'title'    => __( 'Informacion Adicional', '_JPinto' ),
+						'desc_tip' => __( 'Cambia el encabezado de la pestaña Informacion Adicional del producto', '_JPinto' ),
 						'type'     => 'text'
 					),
 
 					array( 'type' => 'sectionend' ),
 
 					array(
-						'title' => __( 'Add to Cart Button Text', '_JPinto' ),
+						'title' => __( 'Boton de Añadir Al Carrito', '_JPinto' ),
 						'type'  => 'title'
 					),
 
 					array(
 						'id'       => 'single_add_to_cart_text',
-						'title'    => __( 'All Product Types', '_JPinto' ),
-						'desc_tip' => __( 'Changes the Add to Cart button text on the single product page for all product type', '_JPinto' ),
+						'title'    => __( 'Todos los tipos de productos', '_JPinto' ),
+						'desc_tip' => __( 'Cambia el texto del botón Agregar al carrito en la página de un solo producto para todo tipo de producto', '_JPinto' ),
 						'type'     => 'text'
 					),
 
 					array( 'type' => 'sectionend' ),
 
 					array(
-						'title' => __( 'Out of Stock Text', '_JPinto' ),
+						'title' => __( 'Texto de Producto agotado', '_JPinto' ),
 						'type'  => 'title'
 					),
 
 					array(
 						'id'       => 'single_out_of_stock_text',
-						'title'    => __( 'Out of Stock text', '_JPinto' ),
-						'desc_tip' => __( 'Changes text for the out of stock on product pages. Default: "Out of stock"', '_JPinto' ),
+						'title'    => __( 'Texto de Producto agotado', '_JPinto' ),
+						'desc_tip' => __( 'Cambia el texto de agotado en las páginas de productos. Predeterminado: "Agotado"', '_JPinto' ),
 						'type'     => 'text',
 					),
 
 					array(
 						'id'       => 'single_backorder_text',
-						'title'    => __( 'Backorder text', '_JPinto' ),
-						'desc_tip' => __( 'Changes text for the backorder on product pages. Default: "Available on backorder"', '_JPinto' ),
+						'title'    => __( 'Texto de pedido pendiente', '_JPinto' ),
+						'desc_tip' => __( 'Cambia el texto del pedido pendiente en las páginas de productos. Predeterminado: "Disponible en pedido pendiente"', '_JPinto' ),
 						'type'     => 'text',
 					),
 
 					array( 'type' => 'sectionend' ),
 
 					array(
-						'title' => __( 'Sale Flash', '_JPinto' ),
+						'title' => __( 'Venta Rapida', '_JPinto' ),
 						'type'  => 'title'
 					),
 
 					array(
 						'id'       => 'single_sale_flash_text',
-						'title'    => __( 'Sale badge text', '_JPinto' ),
-						'desc_tip' => __( 'Changes text for the sale flash on product pages. Default: "Sale!"', '_JPinto' ),
+						'title'    => __( 'Texto de la insignia de Oferta', '_JPinto' ),
+						'desc_tip' => __( 'Cambia el texto del flash de venta en las páginas de productos. Default: "Sale!"', '_JPinto' ),
 						'type'     => 'text',
 						/* translators: Placeholders: %1$s - <code>, %2$s - </code> */
-						'desc'     => sprintf( __( 'Use %1$s{percent}%2$s to insert percent off, e.g., "{percent} off!"', '_JPinto' ), '<code>', '</code>' ) . '<br />' . __( 'Shows "up to n%" for grouped or variable products if multiple percentages are possible.', '_JPinto' ),
+						'desc'     => sprintf( __( 'Use %1$s{percent}%2$s insertar porcentaje de descuento, e.g., "{percent} off!"', '_JPinto' ), '<code>', '</code>' ) . '<br />' . __( 'Shows "up to n%" for grouped or variable products if multiple percentages are possible.', '_JPinto' ),
 					),
 
 					array( 'type' => 'sectionend' ),
@@ -320,55 +320,55 @@ class WC_Customizer_Settings extends WC_Settings_Page {
 				array(
 
 					array(
-						'title' => __( 'Messages', '_JPinto' ),
+						'title' => __( 'Mensajes', '_JPinto' ),
 						'type'  => 'title'
 					),
 
 					array(
 						'id'       => 'woocommerce_checkout_must_be_logged_in_message',
-						'title'    => __( 'Must be logged in text', '_JPinto' ),
-						'desc_tip' => __( 'Changes the message displayed when a customer must be logged in to checkout', '_JPinto' ),
+						'title'    => __( 'Texto Debe iniciar sesión', '_JPinto' ),
+						'desc_tip' => __( 'Cambia el mensaje que se muestra cuando un cliente debe iniciar sesión para pagar', '_JPinto' ),
 						'type'     => 'text'
 					),
 
 					array(
 						'id'       => 'woocommerce_checkout_coupon_message',
-						'title'    => __( 'Coupon text', '_JPinto' ),
-						'desc_tip' => __( 'Changes the message displayed if the coupon form is enabled on checkout', '_JPinto' ),
+						'title'    => __( 'Texto del cupón', '_JPinto' ),
+						'desc_tip' => __( 'Cambia el mensaje que se muestra si el formulario de cupón está habilitado al finalizar la compra', '_JPinto' ),
 						'type'     => 'text',
-						'desc'     => sprintf( '<code>%s ' . esc_attr( '<a href="#" class="showcoupon">%s</a>' ) . '</code>', 'Have a coupon?', 'Click here to enter your code' ),
+						'desc'     => sprintf( '<code>%s ' . esc_attr( '<a href="#" class="showcoupon">%s</a>' ) . '</code>', '¿Tiene un cupón?', 'Haga clic aquí para ingresar su código' ),
 					),
 
 					array(
 						'id'       => 'woocommerce_checkout_login_message',
-						'title'    => __( 'Login text', '_JPinto' ),
-						'desc_tip' => __( 'Changes the message displayed if customers can login at checkout', '_JPinto' ),
+						'title'    => __( 'Tento de Inicio de Sesion', '_JPinto' ),
+						'desc_tip' => __( 'Cambia el mensaje que se muestra si los clientes pueden iniciar sesión al finalizar la compra', '_JPinto' ),
 						'type'     => 'text'
 					),
 
 					array( 'type' => 'sectionend' ),
 
 					array(
-						'title' => __( 'Misc', '_JPinto' ),
+						'title' => __( 'Otros', '_JPinto' ),
 						'type'  => 'title'
 					),
 
 					array(
 						'id'       => 'woocommerce_create_account_default_checked',
-						'title'    => __( 'Create Account checkbox default' ),
-						'desc_tip' => __( 'Control the default state for the Create Account checkbox', '_JPinto' ),
+						'title'    => __( 'Crear casilla de cuenta por defecto' ),
+						'desc_tip' => __( 'Controle el estado predeterminado para la casilla de verificación Crear cuenta', '_JPinto' ),
 						'type'     => 'select',
 						'options'  => array(
-							'customizer_true'  => __( 'Checked', '_JPinto' ),
-							'customizer_false' => __( 'Unchecked', '_JPinto' ),
+							'customizer_true'  => __( 'Activo', '_JPinto' ),
+							'customizer_false' => __( 'Inactivo', '_JPinto' ),
 						),
 						'default'  => 'customizer_false',
 					),
 
 					array(
 						'id'       => 'woocommerce_order_button_text',
-						'title'    => __( 'Submit Order button', '_JPinto' ),
-						'desc_tip' => __( 'Changes the Place Order button text on checkout', '_JPinto' ),
+						'title'    => __( 'Botón Enviar pedido', '_JPinto' ),
+						'desc_tip' => __( 'Cambia el texto del botón Realizar pedido al finalizar la compra', '_JPinto' ),
 						'type'     => 'text'
 					),
 
@@ -381,28 +381,28 @@ class WC_Customizer_Settings extends WC_Settings_Page {
 				array(
 
 					array(
-						'title' => __( 'Tax', '_JPinto' ),
+						'title' => __( 'Impuestos', '_JPinto' ),
 						'type'  => 'title'
 					),
 
 					array(
 						'id'       => 'woocommerce_rate_label',
-						'title'    => __( 'Tax Label', '_JPinto' ),
-						'desc_tip' => __( 'Changes the Taxes label. Defaults to Tax for USA, VAT for European countries', '_JPinto' ),
+						'title'    => __( 'Etiqueta de impuestos', '_JPinto' ),
+						'desc_tip' => __( 'Cambia la etiqueta de Impuestos. Los valores predeterminados son impuestos para EE. UU., IVA para países europeos', '_JPinto' ),
 						'type'     => 'text'
 					),
 
 					array(
 						'id'       => 'woocommerce_countries_inc_tax_or_vat',
-						'title'    => __( 'Including Tax Label', '_JPinto' ),
-						'desc_tip' => __( 'Changes the Including Taxes label. Defaults to Inc. tax for USA, Inc. VAT for European countries', '_JPinto' ),
+						'title'    => __( 'etiqueta de impuestos Incluido', '_JPinto' ),
+						'desc_tip' => __( 'Cambia la etiqueta Impuestos incluidos. El valor predeterminado es Inc. tax para EE. UU., Inc. VAT para países europeos', '_JPinto' ),
 						'type'     => 'text'
 					),
 
 					array(
 						'id'       => 'woocommerce_countries_ex_tax_or_vat',
-						'title'    => __( 'Excluding Tax Label', '_JPinto' ),
-						'desc_tip' => __( 'Changes the Excluding Taxes label. Defaults to Exc. tax for USA, Exc. VAT for European countries', '_JPinto' ),
+						'title'    => __( 'etiqueta de impuestos No Incluidos', '_JPinto' ),
+						'desc_tip' => __( 'Cambia la etiqueta Impuestos excluidos. Predeterminado a Exc. impuestos para EE. UU., Exc. IVA para países europeos', '_JPinto' ),
 						'type'     => 'text'
 					),
 
